@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>find a doctor</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <!--main css -->
+  <link rel="stylesheet" href="styles.css" />
+  <!--boostrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!--fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- top menu -->
+  <section class="topbar ">
+    <div class="container">
+
+      <div class="social">
+        <ul>
+          <p>Follow us on </p>
+          <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="log.html">Log in</a></li>
+          <li><a href="registration.html" target="_blank">Sign in</a></li>
+
+        </ul>
+      </div>
+
+      <div class="search">
+        <ul>
+          <li><a href=""><i class="fa-solid fa-phone"></i> For Overseas callers +8809610010616 </a></li>
+          <li><a href=""><i class="fa-regular fa-envelope"></i> info@squarehospital.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--header-->
+
+  <section class="header sticky-top bg-light bg-white shadow-lg  ">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="w-50   " src="img/logo/logo.png" alt="" />
+            <span class="fw-bold ">Dr.</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-capitalize fw-bold active " aria-current="page" href="/">home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-capitalize fw-bold" href="./doctorSearch.html">Find A Doctor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-capitalize fw-bold" href="./about.html">about us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-capitalize fw-bold" href="./contact.html">contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- doctor search form -->
+  <section class="py-3 ">
+    <div class="container text-center ">
+      <h1>Search Doctor, Make an Appointment</h1>
+      <p class="text-black-50 ">Discover the best doctors, clinic & hospital the city nearest to you.</p>
+    </div>
+    <div class="row ">
+      <div class="col-md-12 offset-md-1">
+        <form action="" class="d-flex justify-content-between ">
+          <!-- search location and doctors name and specialist -->
+          <div class="input-group m-3  ">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Search Location..." aria-label="location"
+              aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group m-3">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="fas fa-user-md"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Search Doctors Name..." aria-label="location"
+              aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group m-3">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="fas fa-user-md"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Search Specialist..." aria-label="location"
+              aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group m-3">
+            <button class="btn btn-primary" type="button">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- doctor list -->
+  <section class="py-3 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 py-2">
+          <h1 class="text-center">Doctor List</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 pb-3">
+          <div class="card shadow-lg">
+            <img src="./img/doctor_1.jpg" class="card-img-top h-25 " alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Dr. John Doe</h5>
+              <p class="card-text text-black-50 ">MBBS - Associate Consultant-Ophthalmology</p>
+              <!-- star -->
+              <div class="rating d-flex ">
+                <div class="star">
+                  <span><i class="fas fa-star text-warning"></i></span>
+                  <span><i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                </div>
+                 (4)
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item text-capitalize"> 
+                  <!-- icon -->
+                  <span><i class="fas fa-map-marker-alt"></i></span>
+                  mirpur-2, dhaka
+                </li>
+                <li class="list-group-item text-capitalize "> 
+                  <!-- icon -->
+                  <span><i class="fas fa-clock"></i></span>
+                  available on <span class="text-uppercase text-sm   ">sun-fri</span>
+                  </li>
+                <li class="list-group-item">
+                  <span><i class="fas fa-money-bill-wave"></i></span>
+                  $100-$500
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-outline-primary text-capitalize">view profile</a>
+              <a href="#" class="btn btn-primary text-capitalize">book now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-lg">
+            <img src="./img/doctor_1.jpg" class="card-img-top h-25 " alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Dr. John Doe</h5>
+              <p class="card-text text-black-50 ">MBBS - Associate Consultant-Ophthalmology</p>
+              <!-- star -->
+              <div class="rating d-flex ">
+                <div class="star">
+                  <span><i class="fas fa-star text-warning"></i></span>
+                  <span><i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                </div>
+                 (4)
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item text-capitalize"> 
+                  <!-- icon -->
+                  <span><i class="fas fa-map-marker-alt"></i></span>
+                  mirpur-2, dhaka
+                </li>
+                <li class="list-group-item text-capitalize "> 
+                  <!-- icon -->
+                  <span><i class="fas fa-clock"></i></span>
+                  available on <span class="text-uppercase text-sm   ">sun-fri</span>
+                  </li>
+                <li class="list-group-item">
+                  <span><i class="fas fa-money-bill-wave"></i></span>
+                  $100-$500
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-outline-primary text-capitalize">view profile</a>
+              <a href="#" class="btn btn-primary text-capitalize">book now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-lg">
+            <img src="./img/doctor_1.jpg" class="card-img-top h-25 " alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Dr. John Doe</h5>
+              <p class="card-text text-black-50 ">MBBS - Associate Consultant-Ophthalmology</p>
+              <!-- star -->
+              <div class="rating d-flex ">
+                <div class="star">
+                  <span><i class="fas fa-star text-warning"></i></span>
+                  <span><i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                </div>
+                 (4)
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item text-capitalize"> 
+                  <!-- icon -->
+                  <span><i class="fas fa-map-marker-alt"></i></span>
+                  mirpur-2, dhaka
+                </li>
+                <li class="list-group-item text-capitalize "> 
+                  <!-- icon -->
+                  <span><i class="fas fa-clock"></i></span>
+                  available on <span class="text-uppercase text-sm   ">sun-fri</span>
+                  </li>
+                <li class="list-group-item">
+                  <span><i class="fas fa-money-bill-wave"></i></span>
+                  $100-$500
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-outline-primary text-capitalize">view profile</a>
+              <a href="#" class="btn btn-primary text-capitalize">book now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-lg">
+            <img src="./img/doctor_1.jpg" class="card-img-top h-25 " alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Dr. John Doe</h5>
+              <p class="card-text text-black-50 ">MBBS - Associate Consultant-Ophthalmology</p>
+              <!-- star -->
+              <div class="rating d-flex ">
+                <div class="star">
+                  <span><i class="fas fa-star text-warning"></i></span>
+                  <span><i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                </div>
+                 (4)
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item text-capitalize"> 
+                  <!-- icon -->
+                  <span><i class="fas fa-map-marker-alt"></i></span>
+                  mirpur-2, dhaka
+                </li>
+                <li class="list-group-item text-capitalize "> 
+                  <!-- icon -->
+                  <span><i class="fas fa-clock"></i></span>
+                  available on <span class="text-uppercase text-sm   ">sun-fri</span>
+                  </li>
+                <li class="list-group-item">
+                  <span><i class="fas fa-money-bill-wave"></i></span>
+                  $100-$500
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-outline-primary text-capitalize">view profile</a>
+              <a href="#" class="btn btn-primary text-capitalize">book now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-lg">
+            <img src="./img/doctor_1.jpg" class="card-img-top h-25 " alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Dr. John Doe</h5>
+              <p class="card-text text-black-50 ">MBBS - Associate Consultant-Ophthalmology</p>
+              <!-- star -->
+              <div class="rating d-flex ">
+                <div class="star">
+                  <span><i class="fas fa-star text-warning"></i></span>
+                  <span><i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                </div>
+                 (4)
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item text-capitalize"> 
+                  <!-- icon -->
+                  <span><i class="fas fa-map-marker-alt"></i></span>
+                  mirpur-2, dhaka
+                </li>
+                <li class="list-group-item text-capitalize "> 
+                  <!-- icon -->
+                  <span><i class="fas fa-clock"></i></span>
+                  available on <span class="text-uppercase text-sm   ">sun-fri</span>
+                  </li>
+                <li class="list-group-item">
+                  <span><i class="fas fa-money-bill-wave"></i></span>
+                  $100-$500
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-outline-primary text-capitalize">view profile</a>
+              <a href="#" class="btn btn-primary text-capitalize">book now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow-lg">
+            <img src="./img/doctor_1.jpg" class="card-img-top h-25 " alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Dr. John Doe</h5>
+              <p class="card-text text-black-50 ">MBBS - Associate Consultant-Ophthalmology</p>
+              <!-- star -->
+              <div class="rating d-flex ">
+                <div class="star">
+                  <span><i class="fas fa-star text-warning"></i></span>
+                  <span><i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                  <span> <i class="fas fa-star text-warning"></i></span>
+                </div>
+                 (4)
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item text-capitalize"> 
+                  <!-- icon -->
+                  <span><i class="fas fa-map-marker-alt"></i></span>
+                  mirpur-2, dhaka
+                </li>
+                <li class="list-group-item text-capitalize "> 
+                  <!-- icon -->
+                  <span><i class="fas fa-clock"></i></span>
+                  available on <span class="text-uppercase text-sm   ">sun-fri</span>
+                  </li>
+                <li class="list-group-item">
+                  <span><i class="fas fa-money-bill-wave"></i></span>
+                  $100-$500
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-outline-primary text-capitalize">view profile</a>
+              <a href="#" class="btn btn-primary text-capitalize">book now</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <!--footer section-->
+
+  <section class="footer_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="footer_box">
+            <h3>Address</h3>
+            <ul>
+              <li class="mb-2">House-19, Road-04, Sector -04, <br>
+                Uttara, Dhaka-1230</li>
+              <li class="mb-2">Phone : +8801755681741 <br>
+                +8801683904278</li>
+              <li>E-mail : contact@xubisoft.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="footer_box">
+            <h3>Courses</h3>
+            <ul>
+              <li><a href="">Software Development</a></li>
+              <li><a href="">Design & Animation</a></li>
+              <li><a href="">APP Development</a></li>
+              <li><a href="">WP Customization</a></li>
+              <li><a href="">Advance Networking</a></li>
+              <li><a href="">CCNA</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="footer_box">
+            <h3>Ready Software</h3>
+            <ul>
+              <li><a href="">School Management</a></li>
+              <li><a href="">Logistic Software</a></li>
+              <li><a href="">HR & Payrool</a></li>
+              <li><a href="">Accounting Software</a></li>
+              <li><a href="">POS</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer_box">
+            <h3>Google map</h3>
+            <ul>
+              <li><a href="">School Management</a></li>
+              <li><a href="">Logistic Software</a></li>
+              <li><a href="">HR & Payrool</a></li>
+              <li><a href="">Accounting Software</a></li>
+              <li><a href="">POS</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--copy-->
+  <section class="copy_section">
+    <div class="container">
+      <div class="row">
+        <div class=" col-sm-6 col-md-6">
+          <div class="left float-left">
+            <p>Copyright &copy; 2019 Docappointment Ltd. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script type="module" src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
