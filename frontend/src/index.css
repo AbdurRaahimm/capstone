@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topbar{
+    background-color: #40b176;
+    color: #fff;
+}
+
+/* responsive topbar */
+@media (max-width: 768px){
+    .topbar {
+        flex-direction: column;    
+    }
+}
+
+ul li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
